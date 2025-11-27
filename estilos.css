@@ -1,1 +1,64 @@
+body {
+    background: #f7f0ff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    color: #8a4dff;
+    font-weight: 800;
+}
+
+.malla {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.ramo {
+    background: #ffffff;
+    border: 2px solid #d6b7ff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(150, 90, 255, 0.15);
+    transition: 0.2s ease;
+}
+
+.ramo.aprobado {
+    background: #e8d7ff;
+    border-color: #b17aff;
+    box-shadow: 0 0 12px rgba(138, 77, 255, 0.5);
+}
+
+.ramo h2 {
+    margin: 0 0 10px;
+    color: #7a35ff;
+}
+
+.btn-aprobar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #b17aff;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-aprobar:hover:not([disabled]) {
+    background: #8a4dff;
+}
+
+.btn-aprobar:disabled {
+    background: #d8c7ff;
+    cursor: not-allowed;
+}
 
